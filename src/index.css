@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.margins {
+  @apply md:mx-5 md:my-8;
+}
+.navbar {
+  @apply margins md:rounded-full px-10 py-4;
+}
+.noiseBg {
+  background: url("assets/noise.svg"),
+    linear-gradient(90deg, rgba(192, 232, 228, 1), rgba(251, 217, 185, 1));
+}
+
+.evenSectionPadding {
+  @apply px-10;
+}
+
+.noiseBg::after {
+}
