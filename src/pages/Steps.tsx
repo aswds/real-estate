@@ -1,12 +1,10 @@
-import React from "react";
+import RegIcon from "src/assets/icons/vuesax/linear/edit-2.svg";
+import AnswerIcon from "src/assets/icons/vuesax/linear/messages.svg";
+import QuoteIcon from "src/assets/icons/vuesax/linear/sms-tracking.svg";
 import StepBox from "src/components/Navbar/StepBox";
 import Title from "src/components/Navbar/shared/Title";
 import Container from "src/styled/Flex";
 import Grid from "src/styled/Grid";
-import QuoteIcon from "src/assets/icons/vuesax/linear/sms-tracking.svg";
-import AnswerIcon from "src/assets/icons/vuesax/linear/messages.svg";
-import RegIcon from "src/assets/icons/vuesax/linear/edit-2.svg";
-import { theme } from "src/Theme";
 
 function Steps() {
   return (

@@ -1,8 +1,7 @@
-import React from "react";
-import Title from "src/components/Navbar/shared/Title";
-import Container from "src/styled/Flex";
 import SubHouse from "src/assets/houses/house4.svg";
+import Title from "src/components/Navbar/shared/Title";
 import Button from "src/styled/Button";
+import Container from "src/styled/Flex";
 function SubscribeSection() {
   return (
     <Container

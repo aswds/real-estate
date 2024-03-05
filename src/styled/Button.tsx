@@ -1,7 +1,11 @@
 // Button.js
 import styled from "styled-components";
 
-const Button = styled.button`
+interface ButtonProps {
+  isDark?: boolean;
+}
+
+const Button = styled.button<ButtonProps>`
   padding: 15px 25px;
   font-size: 16px;
   cursor: pointer;

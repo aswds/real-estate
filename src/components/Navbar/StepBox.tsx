@@ -1,6 +1,3 @@
-import React from "react";
-import Container from "src/styled/Flex";
-
 interface StepBoxProps {
   iconSrc: string;
   title: string;

@@ -1,7 +1,7 @@
-import React, { ReactNode } from "react";
+import React, { ComponentProps } from "react";
 import styled from "styled-components";
 
-interface FlexProps extends React.PropsWithChildren {
+interface FlexProps extends React.PropsWithChildren, ComponentProps<"div"> {
   direction?: string;
   alignItems?: string;
   justifyContent?: string;
@@ -13,8 +13,8 @@ interface FlexProps extends React.PropsWithChildren {
   margin?: string;
   className?: string;
 }
-
-const StyledFlex = styled.div.attrs<FlexProps>((props) => {
+//@ts-ignore
+const StyledFlex = styled.div.attrs((props: FlexProps) => {
   return {
     className: `flex ${props.className}`,
     margin: props.margin,
@@ -22,7 +22,7 @@ const StyledFlex = styled.div.attrs<FlexProps>((props) => {
 
     style: { flexDirection: props.direction, alignItems: props.alignItems },
   };
-})`
+})<FlexProps>`
   align-items: ${(props) => props.alignItems || "stretch"};
   justify-content: ${(props) => props.justifyContent || "flex-start"};
   /* Add your other default styling here */

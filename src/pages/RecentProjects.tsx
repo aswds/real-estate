@@ -1,9 +1,9 @@
-import React, { ElementRef, useRef, useState } from "react";
+import { ElementRef, useRef, useState } from "react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
+import { house1, house2, house3 } from "src/assets/houses";
 import Title from "src/components/Navbar/shared/Title";
 import ProjectBox, { ProjectBoxProps } from "src/components/ProjectBox";
 import Container from "src/styled/Flex";
-import { house1, house2, house3, house4 } from "src/assets/houses";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import styled from "styled-components";
 
 const RecentProjectsButton = styled.div`
@@ -88,7 +88,7 @@ function RecentProjects() {
         className="flex flex-row overflow-scroll  gap-10 "
         ref={projectsContainerRef}
       >
-        {projects.map((project, index) => {
+        {projects.map(() => {
           return (
             <>
               {projects.map((projectData, index) => {

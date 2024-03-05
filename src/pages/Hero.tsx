@@ -4,17 +4,6 @@ import Container from "src/styled/Flex";
 import styled from "styled-components";
 
 const Text = styled.p.attrs({ className: `text-sm md:text-sm` })``;
-const Title = styled.h1.attrs({ className: `md:text-6xl` })``;
-const StyledBox = styled.div`
-  height: 667px;
-  min-width: 785px;
-
-  & .group {
-    right: 0%;
-
-    position: absolute;
-  }
-`;
 
 function Hero() {
   return (

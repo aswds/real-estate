@@ -1,6 +1,5 @@
-import React from "react";
-import Title from "./Navbar/shared/Title";
 import Container from "src/styled/Flex";
+import Title from "./Navbar/shared/Title";
 
 function TransferInfo() {
   const data = [

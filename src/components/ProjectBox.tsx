@@ -1,4 +1,4 @@
-import React, { Ref, forwardRef } from "react";
+import { forwardRef } from "react";
 import Container from "src/styled/Flex";
 
 export interface ProjectBoxProps {
@@ -15,6 +15,8 @@ const ProjectBox = forwardRef(function ProjectBoxRender(
   return (
     <div
       className="border-2 rounded-2xl flex-column md:min-w-[410px] min-w-full"
+      //@ts-ignore
+
       ref={ref}
     >
       <Container
